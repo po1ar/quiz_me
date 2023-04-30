@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import { Analytics } from '@vercel/analytics/react';
 
 import { useState, useEffect } from 'react';
 import { ThemeProvider } from 'next-themes';
