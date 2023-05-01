@@ -82,17 +82,26 @@ button:active {
   color: #fff;
 }
 
-input[type="text"] {
+textarea {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 12px 12px;
+  margin: 12px 0;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
-}
+  font-size: 18px;
 
-input[type="text"]:focus {
+}
+#input5 {
+  resize: none;
+  overflow: hidden;
+  height: 100px;
+  resize: vertical;
+  box-sizing: border-box;
+  overflow: auto;
+  white-space: wrap;
+}
+textarea:focus {
   outline: none;
   border: 2px solid #4caf50;
 }
@@ -131,5 +140,5 @@ a, u {
   top: 250px;
   left: 50%;
   transform: translateX(-50%);
-
 }
+/* i need to change one of the textbox sizes */

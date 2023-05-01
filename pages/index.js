@@ -121,8 +121,7 @@ export default function Home() {
         <div className = 'title-explained'>
           A tool to generate your own custom Study Guide, with the power of AI.
         </div>
-        {/*  */}
-        {/* <h3>To generate your own custom Study Guide, follow the instructions below.</h3> */}
+
       </div>
     )}
     <div className = "main-card">
@@ -140,7 +139,7 @@ export default function Home() {
           <Textbox id="input4" label="How many questions do you need? (Max 5!)" onSubmit={handleTextboxSubmit} isLast={false} darkMode={darkMode} />
         )}
         {step === 5 && (
-          <Textbox id="input5" label="What are some sample questions that you have been given? If you don't have any, enter N/A" onSubmit={handleTextboxSubmit} isLast={false} darkMode={darkMode} />
+          <Textbox id="input5" label="What are some sample questions that you have been given? If you don't have any, enter N/A" onSubmit={handleTextboxSubmit} isLast={false} darkMode={darkMode} style={{width: "800px", height: "200px"}} />
         )}
         {step === 6 && !isContentLoaded && (
           <Textbox id="input6" label="Would you like to input other information?" onSubmit={handleSubmit} isLast={true} darkMode={darkMode} />

@@ -43,9 +43,8 @@ export default function Textbox({ id, label, onSubmit, isLast }) {
         <div className="mb-22 font-bold">{label}</div>
       <form onSubmit={handleSubmit}>
         <div className="flex items-center border rounded-lg overflow-hidden">
-          <input
+          <textarea
             id={id}
-            type="text"
             className={`px-4 py-4 w-full ${isFocused ? 'border-blue-500' : 'border-gray-300'} 
             focus:outline-none focus:border-blue-500 bg-gray-100 dark:bg-gray-800 text-gray-800 
             dark:text-gray-100`}
