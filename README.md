@@ -1,6 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# QuizMe
 
-## Getting Started
+QuizMe is a web application that allows students to create custom study sets with the help of artificial intelligence. QuizMe was born from my friends that I couldn't build such a web app over the weekend. By leveraging the latest technologies in natural language processing and machine learning, QuizMe can automatically generate questions and answers based on any topic, making it easier for students to reinforce their knowledge.
+
+## Features
+- **Custom study sets**: Students can create their own study sets by filling out the questionare to get tailored results.
+- **AI-powered questions**: QuizMe uses natural language processing and machine learning algorithms to generate questions and answers based on the content of your answers. This makes studying more interactive and engaging, as students can reinforce their knowledge.
+- **Responsive design**: QuizMe is built using Next.js and Tailwind CSS, which allows it to be fully responsive and accessible on any desktop device.
+
+## Getting started
+
+To use QuizMe, simply go to our dev build [hosted on Vercel!](https://quizme-eight.vercel.app) and build your own custom study guide!
+
+
+## To Run Locally
 
 First, run the development server:
 
@@ -12,23 +24,10 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Future Updates 
+- [ ] Users can upload their notes and it'll scan and convert to text (using OCR)
+- [ ] Users can export their study guides in .txt, .docx, and .pdf
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Final Thoughts
+This project helped me reinforce my knowledge with Nextjs/Tailwind. Although I've had some experience building with Next+Tailwind, this projected helped me get more used w/it. I also learned how to properly use the OpenAI API in order to retrieve data. Although this is was a weekend project, I do hope to come back to this and add certain functionality (listed above).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
