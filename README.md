@@ -9,7 +9,7 @@ QuizMe is a web application that allows students to create custom study sets wit
 
 ## Getting started
 
-To use QuizMe, simply go to our dev build [hosted on Vercel!](https://quizme-eight.vercel.app) and build your own custom study guide!
+To use QuizMe, simply go to our dev build [(hosted on Vercel!)](https://quizme-eight.vercel.app) and build your own custom study guide!
 
 
 ## To Run Locally
