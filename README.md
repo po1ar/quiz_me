@@ -13,9 +13,12 @@ To use QuizMe, simply go to our dev build [(hosted on Vercel!)](https://quizme-e
 
 
 ## To Run Locally
+First, install all dependencies:
+```
+npm install
+```
 
-First, run the development server:
-
+Then, run the development server:
 ```bash
 npm run dev
 # or
