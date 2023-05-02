@@ -1,6 +1,6 @@
 # QuizMe.ai
 
-QuizMe is a web application that allows students to create custom study sets with the help of artificial intelligence. QuizMe was born from my friends that I couldn't build such a web app over the weekend. By leveraging the latest technologies in natural language processing and machine learning, QuizMe can automatically generate questions and answers based on any topic, making it easier for students to reinforce their knowledge.
+QuizMe is a web application that allows students to create custom study sets with the help of artificial intelligence. QuizMe was born from a bet between my friends and I, that I couldn't build such a web app over the weekend. By leveraging the latest technologies in natural language processing and machine learning, QuizMe can automatically generate questions and answers based on any topic, making it easier for students to reinforce their knowledge.
 
 ## Features
 - **Custom study sets**: Students can create their own study sets by filling out the questionare to get tailored results.
