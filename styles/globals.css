@@ -60,8 +60,6 @@ button:active {
   margin-top: 30px;
   border-radius: 10px;
   overflow-y: scroll;
-
-
 }
 .main-card{
   border-radius: 10px;
@@ -122,23 +120,19 @@ a, u {
   color: #fff;
 }
 .title{
-  /* centered in the top middle of the page */
-  position: absolute;
-  top: 200px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 18px;
-  color: #fff;
-  /* bold */
-  font-weight: 700;
-  font-size: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* center */
+  text-align: center;
+
 }
 .title-explained{
-  /* right below title */
-  font-size: 18px;
-  position: absolute;
-  top: 250px;
-  left: 50%;
-  transform: translateX(-50%);
+  font-size: 16px;
+  margin-bottom: 20px;
+  /* center */
+  text-align: center;
+  
+
 }
 /* i need to change one of the textbox sizes */

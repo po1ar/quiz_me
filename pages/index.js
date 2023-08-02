@@ -119,6 +119,7 @@ export default function Home() {
       <div>
         <div className = 'title'> Welcome to QuizMe! </div>
         <div className = 'title-explained'>
+          {/* // need to fix issue on mobile not loading properly */}
           A tool to generate your own custom Study Guide, with the power of AI.
         </div>
 
