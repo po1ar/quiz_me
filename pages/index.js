@@ -2,13 +2,12 @@ import { useState } from 'react';
 import Textbox from '../components/Textbox';
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
-  apiKey: process.env.NEXT_PUBLIC_OPENAI_APIKEY
+  apiKey: "YOUR_API_KEY",
 });
 const openai = new OpenAIApi(configuration);
-
 export default function Home() {
   const [step, setStep] = useState(1);
-  const [inputs, setInputs] = useState(['', '', '', '', '','']);
+  const [inputs, setInputs] = useState(['', '', '', '', '','', '']);
   const [loading, setLoading] = useState(false);
   const [output, setOutput] = useState('');
   const [darkMode, setDarkMode] = useState(false);
@@ -30,6 +29,10 @@ export default function Home() {
     Question: *question*
     Answer: *answer*
     `;
+    console.log(inputs)
+    // how can i change the apiKey to be the inputted one?
+    openai.configuration.apiKey = inputs[5];
+
     try {
       const response = await openai.createChatCompletion({
         model: "gpt-3.5-turbo",
@@ -119,7 +122,6 @@ export default function Home() {
       <div>
         <div className = 'title'> Welcome to QuizMe! </div>
         <div className = 'title-explained'>
-          {/* // need to fix issue on mobile not loading properly */}
           A tool to generate your own custom Study Guide, with the power of AI.
         </div>
 
@@ -142,8 +144,11 @@ export default function Home() {
         {step === 5 && (
           <Textbox id="input5" label="What are some sample questions that you have been given? If you don't have any, enter N/A" onSubmit={handleTextboxSubmit} isLast={false} darkMode={darkMode} style={{width: "800px", height: "200px"}} />
         )}
-        {step === 6 && !isContentLoaded && (
-          <Textbox id="input6" label="Would you like to input other information?" onSubmit={handleSubmit} isLast={true} darkMode={darkMode} />
+        {step === 6 && (
+          <Textbox id="input6" label="Please enter your OpenAI API Key. " onSubmit={handleTextboxSubmit} isLast={false} darkMode={darkMode} style={{width: "800px", height: "200px"}} />
+        )}
+        {step === 7 && !isContentLoaded && (
+          <Textbox id="input7" label="Would you like to input other information?" onSubmit={handleSubmit} isLast={true} darkMode={darkMode} />
         )}
         {isContentLoaded && (
           <div>
